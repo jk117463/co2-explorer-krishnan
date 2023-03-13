@@ -20,6 +20,7 @@ dbc_css = 'https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.2
 load_figure_template('bootstrap')
 
 app = Dash(__name__, external_stylesheets = [dbc.themes.BOOTSTRAP, dbc_css])
+app.title = 'Co2 explorer'
 server = app.server #Tell the online server how to deploy the app to online server
 
 app.layout = dbc.Container(
